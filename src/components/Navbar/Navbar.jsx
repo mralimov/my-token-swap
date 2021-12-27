@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../../images/uniswap-logo.png';
+import ethereum from '../../images/ethereum.png';
+import { BiChevronDown } from 'react-icons/bi';
 const Navbar = () => {
   return (
     <div className='navbar'>
@@ -14,8 +16,12 @@ const Navbar = () => {
         </a>
       </div>
       <div className='navbar_options'>
-        <div className='navbar_mainnet'>Ethirium</div>
-        <div>Connect Wallet</div>
+        <div className='navbar_mainnet'>
+          <img className='mainnet_img' src={ethereum} />
+          <span>Ethereum</span>
+          <BiChevronDown />
+        </div>
+        <div className='connect_wallet'>Connect Wallet</div>
         <div className='navbar_settings'>...</div>
       </div>
     </div>
