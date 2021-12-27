@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  height: 4rem;
+  // position: relative;
+  // background-image: linear-gradient(transparent 50%, rgb(25, 27, 31) 50%);
+  // background-position: 0px 0px;
+  // background-size: 100% 200%;
+  // box-shadow: transparent 0px 0px 0px 1px;
+  // transition: background-position 0.1s ease 0s, box-shadow 0.1s ease 0s;
+  // background-blend-mode: hard-light;
+
+  &_logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid green;
+    &:hover {
+      rotate: 1rem;
+    }
+  }
+
+  &_menu {
+    background-color: rgb(25, 27, 31);
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    a {
+      font-size: 1.6rem;
+      border-radius: 3rem;
+      outline: none;
+      cursor: pointer;
+      color: rgb(195, 197, 203);
+      font-weight: 500;
+      padding: 8px 12px;
+      word-break: break-word;
+      overflow: hidden;
+      white-space: nowrap;
+
+      sup {
+        vertical-align: super;
+        font-size: 9px;
+      }
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+    .active_list {
+      margin: 2px;
+      color: #ffffff;
+      background-color: rgb(33, 36, 41);
+    }
+  }
+
+  &_options {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    font-size: 1.8em;
+    background-color: rgb(25, 27, 31);
+    border: 1px solid red;
+  }
+}
