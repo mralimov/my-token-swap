@@ -1,0 +1,109 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  height: 4rem;
+
+  &_logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 2rem;
+
+    &:hover {
+      rotate: 1rem;
+    }
+  }
+
+  &_menu {
+    background-color: rgb(25, 27, 31);
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 1.6rem;
+      border-radius: 3rem;
+      outline: none;
+      cursor: pointer;
+      color: rgb(195, 197, 203);
+      font-weight: 500;
+      padding: 8px 12px;
+      word-break: break-word;
+      overflow: hidden;
+      white-space: nowrap;
+
+      sup {
+        vertical-align: super;
+        font-size: 9px;
+      }
+
+      &:hover {
+        color: #ffffffff;
+      }
+    }
+    .active_list {
+      margin: 2px;
+      color: #ffffff;
+      background-color: rgb(33, 36, 41);
+    }
+  }
+
+  &_options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    margin: 1rem;
+    align-items: center;
+    width: 19em;
+  }
+
+  &_mainnet {
+    background-color: rgb(25, 27, 31);
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    word-break: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+
+  .mainnet_img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .connect_wallet {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    word-break: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgba(21, 61, 111, 0.44);
+    border: 1px solid rgba(21, 61, 111, 0.44);
+    color: rgb(80, 144, 234);
+
+    &:hover {
+      border: 1px solid rgba(49, 95, 154, 0.44);
+      color: rgb(57, 130, 231);
+    }
+  }
+
+  &_settings {
+    background-color: rgb(25, 27, 31);
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    word-break: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+}

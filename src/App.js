@@ -1,10 +1,11 @@
-import React from 'react';
-
+import React, { Fragment } from 'react';
+import { Navbar, SwapBox } from './components/index';
 const App = () => {
   return (
-    <div>
-      <h1>My uniswap</h1>
-    </div>
+    <Fragment>
+      <Navbar />
+      <SwapBox />
+    </Fragment>
   );
 };
 
